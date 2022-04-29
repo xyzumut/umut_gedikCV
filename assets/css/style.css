@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Sol konteynır Genel stilleri */
+#left-container{
+    width: 30vw;
+    height: 100vh;
+    background-color: #434244;
+    color: #BBBCBE;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#left-container .left-container-item{
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    padding: 10px;
+}
+
+    /* Profil resmi stilleri */
+#left-container #profile-photo{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    margin: 5px auto;
+}
+#left-container #profile-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+    /* Contact Stilleri */
+#left-container .contact{
+    padding: 10px 5px;
+    flex-direction: column;
+    align-items: center;
+}
+#left-container .contact .contact-item{
+    width: 100%;
+    padding: 3px;
+    height: auto;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    margin: 7px 0;
+}
+#left-container .contact .contact-item .adress{
+    font-size: 14px;
+}
+#left-container .contact .contact-item i{
+    margin-right: 30px;
+    color: white;
+}
+
+
+    /* Links Stilleri */
+
+
+#left-container .links{ 
+    flex-direction: column;
+}
+#left-container .links .links-header{
+    width: 100%;
+    font-size: 30px;
+    color: #ddd4ce;
+    margin-bottom: 10px;
+    position: relative;
+}
+#left-container .links .links-header:after{
+    content: '';
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #ddd4ce;
+    display: block;
+    margin: 5px 0;
+}
+#left-container .links .links-item{
+    margin-top: 10px;
+}
+#left-container .links .links-item a{
+    color: #BBBCBE;
+    text-decoration: none;
+    margin-left: 30px;
+    border-bottom: 1px solid #BBBCBE;
+    transition: .5s all ease;
+}
+#left-container .links .links-item a:hover{
+    color: white;
+    border-bottom-color: white;
+    text-shadow: 0 0 15px white;
+}
+#left-container .links .links-item i{
+    color: white;
+}
+
+
+    /* Skills Stilleri*/
+
+
+#left-container .skills{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#left-container .skills .skills-header{
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ddd4ce;
+    position: relative;
+}
+#left-container .skills .skills-header::after{
+    content: '';
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #ddd4ce;
+    display: block;
+    margin: 5px 0;
+}
+#left-container .skills p{
+    width: 34%;
+    margin: 5px 0;
+}
+
+
+    /* Language stilleri */
+
+
+#left-container .language{
+    flex-direction: column;
+}
+#left-container .language .language-header{
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ddd4ce;
+    position: relative;
+}
+#left-container .language .language-header::after{
+    content: '';
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #ddd4ce;
+    display: block;
+    margin: 5px 0;
+}
+
+
+/* Sol konteynır Genel stilleri */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* Sağ Konteynır Genel Stilleri */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#right-container{
+    width:70vw;
+    float: right;
+    padding: 10px 25px;
+}
+#right-container .main-header{
+    width: 100%;
+    height: 180px;
+    background-color: #434244;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    border-radius: 20px;
+}
+#right-container .main-header .name{
+    font-size: 80px;
+    margin-left:50px ;
+}
+#right-container .main-header .title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left:50px ;
+}
+#right-container .about-me{
+    width: 100%;
+    padding: 30px 10px 10px 10px;
+}
+#right-container .about-me .aboutMe-header{
+    font-size: 40px;
+    color: black;
+    border-bottom: 2px solid #434244;
+    margin-bottom: 20px;
+}
+#right-container .about-me .aboutMe-text{
+    width: 100%;
+    color: #434244;
+}
+#right-container .about-me .aboutMe-text p{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.exp{
+    width: 100%;
+    padding: 10px;
+}
+    /* Kart Stilleri */
+.card-header{
+    font-size: 25px;
+    color: black;
+    border-bottom: 2px solid #434244;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+.card-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-item{
+    width: 45%;
+    margin-bottom: 30px;
+}
+.card-item .item-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.card-item .item-header .item-header-title{
+    font-size: 20px;
+    width: 50%;
+    font-weight: bold;
+}
+.card-item .item-header .item-header-date{
+    font-size: 18px;
+}
+.card-item .item-corp-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-item .item-content{
+    font-size: 16px;
+}
+    /* Kart Stilleri */
+
+/* Sağ Konteynır Genel Stilleri */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
